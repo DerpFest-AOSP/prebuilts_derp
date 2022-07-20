@@ -1,0 +1,23 @@
+java_import_host {
+    name: "data-binder-lib",
+    jars: ["data-binder-fat-c0a4554.jar"],
+}
+
+java_binary_host {
+    name: "data-binder",
+    static_libs: [
+        "data-binder-lib",
+    ],
+}
+
+java_plugin {
+    name: "data-binding-annotation-processor",
+    processor_class: "android.databinding.annotationprocessor.ProcessDataBinding",
+
+    static_libs: [
+        "data-binder-lib",
+    ],
+    installable: false,
+
+    use_tools_jar: true,
+}
