@@ -89,6 +89,7 @@ maven_to_make = {
     'androidx.mediarouter:mediarouter': { },
     'androidx.palette:palette': { },
     'androidx.preference:preference': { },
+    'androidx.preference:preference-ktx': { },
     'androidx.recyclerview:recyclerview': { },
     'androidx.vectordrawable:vectordrawable': { },
     'androidx.viewpager:viewpager': { },
