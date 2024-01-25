@@ -9,3 +9,14 @@ LOCAL_SRC_FILES := gramophone/gramophone.apk
 LOCAL_PRODUCT_MODULE := true
 LOCAL_OPTIONAL_USES_LIBRARIES := androidx.window.extensions androidx.window.sidecar
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := QPGallery
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_SRC_FILES := qpgallery/qpgallery.apk
+LOCAL_PRODUCT_MODULE := true
+LOCAL_OPTIONAL_USES_LIBRARIES := com.sec.android.app.multiwindow
+LOCAL_OVERRIDES_PACKAGES := Gallery Gallery2 SnapdragonGallery
+include $(BUILD_PREBUILT)
